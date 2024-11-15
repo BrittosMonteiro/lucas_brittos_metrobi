@@ -1,0 +1,45 @@
+.related {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  min-height: 150px;
+}
+
+.related_images {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  background-color: green;
+}
+
+.related_posts {
+  display: flex;
+  width: 300px;
+  padding: 16px;
+  background-color: pink;
+}
+
+@media screen and (max-width: 1024px) {
+  .related {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .related {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .related {
+    flex-direction: column;
+  }
+  .related_images,
+  .related_posts {
+    width: 100%;
+  }
+}
